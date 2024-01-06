@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 
-const SearchForm = ({ onSubmit }) => {
+const SearchForm = ({ onSubmit, onClear }) => {
   const [username, setUsername] = useState('');
 
   const handleSubmit = (e) => {
@@ -9,20 +9,32 @@ const SearchForm = ({ onSubmit }) => {
     onSubmit(username);
   };
 
+  const handleClear = () => {
+    setUsername('');
+    onClear();
+  };
+
   return (
-    <form onSubmit={handleSubmit} role="search">
+    <form onSubmit={handleSubmit} role="search" className="form-container">
       <label htmlFor="githubUser">Type the GitHub username you want to search.</label>
       <div className="search-container">
-        <input
-          type="text"
-          id="githubUser"
-          aria-labelledby="githubUser"
-          placeholder="Enter GitHub username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+        <div className="search-bar">
+          <input
+            type="text"
+            id="githubUser"
+            aria-labelledby="githubUser"
+            placeholder="Enter GitHub username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        {username && (
+          <div className="clear-button">
+            <button tabIndex="0" type="button" label="Clear search input" onClick={handleClear}>x</button>
+          </div>
+        )}
       </div>
-      <button type="submit">Search</button>
+      <button tabIndex="0" type="submit" label="Search GitHub username">Search</button>
     </form>
   );
 };

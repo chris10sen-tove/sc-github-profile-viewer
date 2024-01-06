@@ -29,6 +29,13 @@ const App = () => {
     }
   }, [username]);
 
+  const handleClearSearch = () => {
+    setUsername('');
+    setUser(null);
+    setRepositories([]);
+    setSelectedRepository(null);
+  };
+
   useEffect(() => {
     if (username) {
       fetchUserData();
@@ -38,7 +45,7 @@ const App = () => {
   return (
     <div className="App-container">
       <h1>GitHub Profile Viewer</h1>
-      <SearchForm onSubmit={(username) => setUsername(username)} />
+      <SearchForm onSubmit={(username) => setUsername(username)} onClear={handleClearSearch} />
 
       {user && (
         <div>

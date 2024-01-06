@@ -1,3 +1,5 @@
+/* App.css */
+
 .App {
   text-align: center;
   padding: 20px;
@@ -155,4 +157,36 @@ li {
   font-size: 18px;
   margin: 5px 0;
   color: #c0392b;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* Add relative positioning to the container */
+}
+
+.search-bar {
+  flex: 1; /* Take up remaining space in the container */
+}
+
+.clear-button {
+  position: absolute;
+  right: -5px; /* Adjust the right position as needed */
+  top: 50%;
+  transform: translateY(-62%);
+}
+
+.clear-button button {
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.clear-button button:hover {
+  background-color: #c0392b;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: white;
 }
