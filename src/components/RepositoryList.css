@@ -1,0 +1,15 @@
+.repository-list {
+    text-align: center;
+  }
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #d9534f;
+}
+  
