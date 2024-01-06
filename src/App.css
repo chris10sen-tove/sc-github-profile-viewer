@@ -79,6 +79,10 @@ img {
   height: auto;
 }
 
+h1 {
+  color: #d9534f
+}
+
 h2 {
   font-size: 24px;
   margin-bottom: 10px;
