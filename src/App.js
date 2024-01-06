@@ -14,6 +14,7 @@ const App = () => {
 
   const fetchUserData = useCallback(async () => {
     try {
+      console.log("Github Token:", process.env.REACT_APP_GITHUB_TOKEN)
       const response = await axios.get(`https://api.github.com/users/${username}`, {
         headers: {
           Authorization: `Bearer ${process.env.REACT_APP_GITHUB_TOKEN}`,
