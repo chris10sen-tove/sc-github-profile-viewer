@@ -1,5 +1,5 @@
 import React from 'react';
-import './RepositoryList.css';
+import '../App.css';
 
 const RepositoryList = ({ repositories }) => {
   return (

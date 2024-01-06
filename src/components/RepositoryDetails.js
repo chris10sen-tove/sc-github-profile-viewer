@@ -1,5 +1,5 @@
 import React from 'react';
-import './RepositoryDetails.css';
+import '../App.css';
 
 const RepositoryDetails = ({ repository }) => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SearchForm.css';
+import '../App.css';
 
 const SearchForm = ({ onSubmit }) => {
   const [username, setUsername] = useState('');
@@ -12,14 +12,16 @@ const SearchForm = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit} role="search">
       <label htmlFor="githubUser">Type the GitHub username you want to search.</label>
-      <input
-        type="text"
-        id="githubUser"
-        aria-labelledby="githubUser"
-        placeholder="Enter GitHub username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
+      <div className="search-container">
+        <input
+          type="text"
+          id="githubUser"
+          aria-labelledby="githubUser"
+          placeholder="Enter GitHub username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+      </div>
       <button type="submit">Search</button>
     </form>
   );

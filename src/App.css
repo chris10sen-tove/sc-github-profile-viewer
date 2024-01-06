@@ -7,7 +7,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 80px;
   pointer-events: none;
 }
 
@@ -19,7 +19,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,9 +45,110 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #fff;
-  color: #d9534f;
+  color: #c0392b;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+/* UserStats.css */
+.user-stats {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #c0392b;
+}
+
+/* UserProfile.css */
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #c0392b;
+}
+
+/* SearchForm.css */
+.form-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container svg {
+  margin-right: 10px; /* Adjust the spacing between the icon and input */
+}
+
+input {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #c0392b;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* RepositoryList.css */
+.repository-list {
+  text-align: center;
+}
+
+/* RepositoryDetails.css */
+.repository-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #c0392b;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #c0392b;
 }
