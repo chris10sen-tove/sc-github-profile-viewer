@@ -3,7 +3,7 @@ import '../App.css';
 
 const RepositoryList = ({ repositories }) => {
   return (
-    <div>
+    <div role="region">
       <h3>Recent Repositories</h3>
       <ul>
         {repositories.map((repo) => (

@@ -15,7 +15,7 @@ const SearchForm = ({ onSubmit, onClear }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} role="search" className="form-container">
+    <form onSubmit={handleSubmit} role="group" className="form-container">
       <label htmlFor="githubUser">Type the GitHub username you want to search.</label>
       <div className="search-container">
         <div className="search-bar">
@@ -30,7 +30,7 @@ const SearchForm = ({ onSubmit, onClear }) => {
         </div>
         {username && (
           <div className="clear-button">
-            <button tabIndex="0" type="button" label="Clear search input" onClick={handleClear}>x</button>
+            <button tabIndex="0" type="button" label="Clear search input" onClick={handleClear}>×</button>
           </div>
         )}
       </div>

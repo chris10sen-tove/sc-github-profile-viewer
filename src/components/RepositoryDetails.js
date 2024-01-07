@@ -3,7 +3,7 @@ import '../App.css';
 
 const RepositoryDetails = ({ repository }) => {
   return (
-    <div>
+    <div role="region" label="Repository Details">
       <h4>{repository.name}</h4>
       <p>{repository.description}</p>
       <p>Language: {repository.language}</p>

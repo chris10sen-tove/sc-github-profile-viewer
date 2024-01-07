@@ -3,7 +3,7 @@ import '../App.css';
 
 const UserProfile = ({ user }) => {
   return (
-    <div>
+    <div role="region" label="User Profile">
       <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
       <h2>{user.name}</h2>
       <p>{user.bio}</p>
